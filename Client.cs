@@ -17,6 +17,7 @@ namespace serverChat
             _handler = socket;
             _userThread = new Thread(listner);
             _userThread.IsBackground = true;
+
             _userThread.Start();
         }
         public string UserName
